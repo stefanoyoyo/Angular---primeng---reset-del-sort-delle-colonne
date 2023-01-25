@@ -3,7 +3,7 @@
     <h5>Multiple Columns</h5>
     <p>Use metakey to add a column to the sort selection.</p>
 
-    <p-table [value]="products2" sortMode="multiple">
+    <p-table #table [value]="products2" sortMode="multiple">
         <ng-template pTemplate="header">
             <tr>
                 <th pSortableColumn="code">Code <p-sortIcon field="code"></p-sortIcon></th>
@@ -24,3 +24,6 @@
         </ng-template>
     </p-table>
 </div>
+
+
+<button (click)="onclick()">click</button>
